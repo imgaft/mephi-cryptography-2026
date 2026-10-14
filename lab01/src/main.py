@@ -77,6 +77,8 @@ def decrypt(text: str) -> str:
         result.append(ALPHABET[index])
 
     return "".join(result)
+
+
 def main() -> None:
     """Запускает шифрование и дешифрование текста."""
     validate_alphabets()
