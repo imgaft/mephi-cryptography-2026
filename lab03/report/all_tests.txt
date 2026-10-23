@@ -1,0 +1,60 @@
+test_different_messages (test_checksum.TestChecksum.test_different_messages)
+Проверка контрольных сумм двух сообщений. ... ok
+test_empty_message (test_checksum.TestChecksum.test_empty_message)
+Пустое сообщение. ... ok
+test_hex_format (test_checksum.TestChecksum.test_hex_format)
+Проверка шестнадцатеричного представления. ... ok
+test_invalid_input (test_checksum.TestChecksum.test_invalid_input)
+Проверка некорректного типа данных. ... ok
+test_multiple_blocks (test_checksum.TestChecksum.test_multiple_blocks)
+Два блока: AB и CD. ... ok
+test_odd_length (test_checksum.TestChecksum.test_odd_length)
+Нечётное количество байтов. ... ok
+test_rotate_left (test_checksum.TestChecksum.test_rotate_left)
+Проверка циклического сдвига. ... ok
+test_single_block (test_checksum.TestChecksum.test_single_block)
+Один 16-битный блок: AB. ... ok
+test_unicode (test_checksum.TestChecksum.test_unicode)
+Проверка корректной обработки UTF-8. ... ok
+test_checksum_collision (test_signature.TestGOSTSignature.test_checksum_collision) ... ok
+test_collision_keeps_signature_valid (test_signature.TestGOSTSignature.test_collision_keeps_signature_valid)
+Доказывает ограничение 16-битной суммы: коллизия проходит проверку. ... ok
+test_deterministic_signature (test_signature.TestGOSTSignature.test_deterministic_signature)
+Проверка подписи при фиксированном k. ... ok
+test_hash_range (test_signature.TestGOSTSignature.test_hash_range)
+Хеш приводится к диапазону 1..q-1. ... ok
+test_in_range_tampering (test_signature.TestGOSTSignature.test_in_range_tampering) ... ok
+test_invalid_a (test_signature.TestGOSTSignature.test_invalid_a)
+Проверка условия a^q mod p = 1. ... ok
+test_invalid_divisibility (test_signature.TestGOSTSignature.test_invalid_divisibility)
+q должно делить p - 1. ... ok
+test_invalid_p (test_signature.TestGOSTSignature.test_invalid_p)
+Составное p отклоняется. ... ok
+test_invalid_private_key (test_signature.TestGOSTSignature.test_invalid_private_key)
+Некорректный закрытый ключ отклоняется. ... ok
+test_invalid_public_key (test_signature.TestGOSTSignature.test_invalid_public_key)
+Некорректный открытый ключ отклоняется. ... ok
+test_invalid_q (test_signature.TestGOSTSignature.test_invalid_q)
+Составное q отклоняется. ... ok
+test_invalid_r_boundary (test_signature.TestGOSTSignature.test_invalid_r_boundary)
+Проверка границ параметра r. ... ok
+test_invalid_s_boundary (test_signature.TestGOSTSignature.test_invalid_s_boundary)
+Проверка границ параметра s. ... ok
+test_key_generation (test_signature.TestGOSTSignature.test_key_generation)
+Генерация математически согласованной пары ключей. ... ok
+test_modified_message (test_signature.TestGOSTSignature.test_modified_message)
+Изменение сообщения приводит к отклонению подписи. ... ok
+test_modified_signature (test_signature.TestGOSTSignature.test_modified_signature)
+Подпись с недопустимым r отклоняется. ... ok
+test_report_parameters (test_signature.TestGOSTSignature.test_report_parameters) ... ok
+test_valid_parameters (test_signature.TestGOSTSignature.test_valid_parameters)
+Корректные параметры принимаются. ... ok
+test_valid_signature (test_signature.TestGOSTSignature.test_valid_signature)
+Корректная подпись принимается. ... ok
+test_zero_hash_replacement (test_signature.TestGOSTSignature.test_zero_hash_replacement)
+Нулевой остаток хеша заменяется единицей. ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.050s
+
+OK
